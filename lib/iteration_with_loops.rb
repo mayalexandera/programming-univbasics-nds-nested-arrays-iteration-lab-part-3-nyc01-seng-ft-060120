@@ -3,7 +3,9 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   new_arr = []
   src.flatten.map do |el|
-    el.is_a? String
+    if el.is_a? String
+      new_arr << el
+    end
   end
-  
+  new_arr.join(" ")
 end
