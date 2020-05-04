@@ -5,7 +5,7 @@ def join_nested_strings(src)
   src.each do |sub|
     sub.each do |el|
       if el.class === String 
-        new_arr.push(el)
+        new_arr<<(el)
       end
     end
     return new_arr.join(" ")
