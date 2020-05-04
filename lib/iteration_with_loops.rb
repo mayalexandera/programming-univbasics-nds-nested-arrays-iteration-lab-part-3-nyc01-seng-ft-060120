@@ -8,6 +8,7 @@ def join_nested_strings(src)
         new_arr.push(el)
       end
     end
+    return new_arr.join(" ")
   end
-  return new_arr.join(" ")
+  
 end
